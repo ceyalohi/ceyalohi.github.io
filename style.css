@@ -1,4 +1,3 @@
-/* General Body */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,91 +5,60 @@ body {
   color: #333;
 }
 
-/* ---------------- Header ---------------- */
-.header {
-  text-align: center; /* Center everything in header */
-  background-color: #002366; /* Dark royal blue */
-  color: white;
-  padding: 2rem 1rem;
+/* Navigation bar */
+nav {
+  background-color: #002366; /* Royal blue */
+  padding: 1rem;
+  position: sticky;
+  top: 0;
 }
 
-/* Motto text */
-.header p {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-/* White line under motto */
-.header hr {
-  border: 0;
-  height: 2px;
-  background-color: white;
-  width: 50%;
-  margin: 0.5rem auto;
-}
-
-/* Navigation inside header */
-.header nav ul {
-  list-style: none; /* Remove bullets */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
   padding: 0;
-  display: flex; /* Horizontal layout */
-  justify-content: center; /* Center links */
-  gap: 2rem; /* Space between links */
-  margin-top: 1rem;
 }
 
-.header nav a {
+nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.1rem;
 }
 
-.header nav a:hover {
-  color: #FFA733; /* Lighter orange on hover */
-}
-
-/* ---------------- Hero Section ---------------- */
+/* Hero section */
 .hero {
-  background-color: #FFA733; /* Light orange */
-  height: 200px; /* optional height */
+  background-color: #ff6600; /* Orange */
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
 }
 
-/* ---------------- Sections ---------------- */
+.hero h1 {
+  font-size: 3rem;
+}
+
+/* Sections */
 section {
   padding: 3rem 2rem;
-  max-width: 900px;
+  max-width: 800px;
   margin: auto;
 }
 
 h2 {
   color: #002366;
-  text-align: center; /* Center titles */
-  margin-bottom: 1.5rem;
 }
 
-/* ---------------- Images ---------------- */
-img {
-  border-radius: 10px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 1rem auto; /* center images */
+/* Menu list */
+#menu ul {
+  list-style: none;
+  padding: 0;
 }
 
-/* ---------------- Menu Items ---------------- */
-.menu-item {
-  text-align: center; /* Center menu text */
-  margin-bottom: 2rem;
-}
-
-.menu-item img:hover {
-  transform: scale(1.05); /* zoom effect */
-  transition: transform 0.3s ease;
-}
-
-/* ---------------- Links Hover ---------------- */
-a:hover {
-  color: #FFA733; /* universal hover for links if needed */
+#menu li {
+  background: #f2f2f2;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
 }
