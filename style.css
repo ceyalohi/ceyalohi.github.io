@@ -47,15 +47,6 @@ body {
   font-size: 1.1rem;
 }
 
-.header nav a:hover {
-  color: #FFA733; /* Lighter orange on hover */
-}
-
-/* ---------------- Hero Section ---------------- */
-.hero {
-  background-color: #FFA733; /* Light orange */
-  height: 200px; /* optional height */
-}
 
 /* ---------------- Sections ---------------- */
 section {
