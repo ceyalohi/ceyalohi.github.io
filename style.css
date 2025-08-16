@@ -8,35 +8,36 @@ body {
 
 /* ---------------- Header ---------------- */
 .header {
-  text-align: center; /* Center everything in header */
-  background-color: #002366; /* Dark royal blue */
+  text-align: center;         /* Center everything in the header */
+  background-color: #002366;  /* Dark royal blue */
   color: white;
   padding: 2rem 1rem;
 }
 
-/* Motto text */
-.header p {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
+/* Logo styling */
+.header-logo {
+  display: block;
+  margin: 1rem auto;   /* centers the image */
+  max-width: 180px;    /* adjust this for desired size */
+  height: auto;        /* maintains aspect ratio */
 }
 
-/* White line under motto */
+/* White line under logo */
 .header hr {
   border: 0;
   height: 2px;
   background-color: white;
   width: 50%;
-  margin: 0.5rem auto;
+  margin: 1rem auto;  /* spacing above and below the line */
 }
 
 /* Navigation inside header */
 .header nav ul {
-  list-style: none; /* Remove bullets */
+  list-style: none;        /* Remove bullets */
   padding: 0;
-  display: flex; /* Horizontal layout */
-  justify-content: center; /* Center links */
-  gap: 2rem; /* Space between links */
+  display: flex;           /* horizontal layout */
+  justify-content: center; /* center links */
+  gap: 2rem;               /* spacing between links */
   margin-top: 1rem;
 }
 
@@ -47,7 +48,22 @@ body {
   font-size: 1.1rem;
 }
 
+/* Navigation hover effect */
+.header nav a:hover {
+  color: #FFA733;
+}
 
+/* ---------------- Responsive ---------------- */
+@media (max-width: 600px) {
+  .header-logo {
+    max-width: 120px;   /* shrink logo on small screens */
+  }
+
+  .header nav ul {
+    flex-direction: column;  /* stack links vertically on mobile */
+    gap: 1rem;
+  }
+}
 /* ---------------- Sections ---------------- */
 section {
   padding: 3rem 2rem;
