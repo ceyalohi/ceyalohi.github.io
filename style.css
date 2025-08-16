@@ -5,12 +5,26 @@ body {
   color: #333;
 }
 
+/* Header */
+.header {
+  text-align: center;
+  padding: 2rem;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #002366; /* Royal blue */
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
 /* Navigation bar */
 nav {
   background-color: #002366; /* Royal blue */
   padding: 1rem;
-  position: sticky;
-  top: 0;
 }
 
 nav ul {
@@ -28,18 +42,6 @@ nav a {
   font-weight: bold;
 }
 
-/* Hero section */
-.hero {
-  background-color: #ff6600; /* Orange */
-  color: white;
-  text-align: center;
-  padding: 4rem 2rem;
-}
-
-.hero h1 {
-  font-size: 3rem;
-}
-
 /* Sections */
 section {
   padding: 3rem 2rem;
@@ -48,6 +50,7 @@ section {
 }
 
 h2 {
+  text-align: center;
   color: #002366;
 }
 
@@ -61,4 +64,9 @@ h2 {
   background: #f2f2f2;
   padding: 0.5rem;
   margin: 0.5rem 0;
+}
+
+/* Accent color (lighter orange) */
+.hero, #menu li:hover {
+  background-color: #FFA500;
 }
